@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,28 +7,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 
     <title>@yield('title')</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <img src="{{ asset('/img/manta.png') }}" width="50" height="50" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="{{url('/about')}}">About us</a>
-            <a class="nav-link" href="{{url('/items')}}">View</a>
-            <a class="nav-link" href="{{url('/contact')}}">Contact</a>
+            <a class="nav-link active" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="{{url('/about')}}">About us</a>
+            <a class="nav-link active" href="{{url('/items')}}">View Your Inventory</a>
+            <a class="nav-link active" href="{{url('/contact')}}">Contact us</a>
           </div>
         </div>
       </div>
     </nav>
 
     @yield('container')
+
+    <footer>
+      <p>Copyright &copy 2021 | Putri Ainur Fitri</p>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

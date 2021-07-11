@@ -12,7 +12,7 @@
         @method('patch')
         @csrf
         <div class="form-group">
-          <label for="name">name</label>
+          <label for="name">Item Name</label>
           <input type="text" class="form-control @if($errors->has('name')) is-invalid @endif" id="name" placeholder="Masukkan name" name="name" value="{{ $item->name }}">
           @if ($errors->has('name'))
             <span class="invalid-feedback" role="alert">
@@ -21,7 +21,7 @@
           @endif
         </div>
         <div class="form-group">
-          <label for="quantity">quantity</label>
+          <label for="quantity">Quantity</label>
           <input type="text" class="form-control @if($errors->has('quantity')) is-invalid @endif" id="quantity" placeholder="Masukkan quantity" name="quantity" value="{{ $item->quantity }}">
           @if ($errors->has('quantity'))
             <span class="invalid-feedback" role="alert">
@@ -30,11 +30,11 @@
           @endif
         </div>
         <div class="form-group">
-          <label for="price">price</label>
+          <label for="price">Price</label>
           <input type="text" class="form-control" id="price" placeholder="Masukkan price" name="price" value="{{ $item->price }}">
         </div>
         <div class="form-group">
-          <label for="manufacturer">manufacturer</label>
+          <label for="manufacturer">Manufacturer</label>
           <input type="text" class="form-control" id="quantity" placeholder="Masukkan manufacturer" name="manufacturer" value="{{ $item->manufacturer }}">
         </div>
         <button type="submit" class="btn btn-primary">Ubah Data!</button>

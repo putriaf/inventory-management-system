@@ -3,10 +3,10 @@
 @section('title', 'Daftar Barang')
 
 @section('container')
-<div class="container">
+<div class="container ">
   <div class="row">
     <div class="col-6">
-      <h1 class="mt-3">Daftar Barang</h1>
+      <h1 class="mt-5">Daftar Barang</h1>
 
       <a href="/items/create" class="btn btn-primary my-3">Tambah Data</a>
 
